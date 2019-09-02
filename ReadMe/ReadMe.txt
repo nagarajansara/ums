@@ -17,8 +17,16 @@
 				 ]
 		DELETE: http://localhost:8080/ums/api/user/{id}
 
-
+4. Before build the application, Need to change the data base details in "db.properties"
 		
 Constraints:
+************
 	1. Not use the SQL transaction
 	2. Not maintain the authetification
+	3. Data base user name and password not encrypted
+	
+Deployment Details
+***************
+1. Build Tool : Maven
+2. Java 7
+3. Server: Tomcat 7
