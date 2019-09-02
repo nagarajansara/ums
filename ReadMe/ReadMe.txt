@@ -18,6 +18,7 @@
 		DELETE: http://localhost:8080/ums/api/user/{id}
 
 4. Before build the application, Need to change the data base details in "db.properties"
+5. Artifact location is {web/target/ums.war}
 		
 Constraints:
 ************
