@@ -30,3 +30,4 @@ Deployment Details
 1. Build Tool : Maven
 2. Java 7
 3. Server: Tomcat 7
+4. MySQL version  5.7.11
