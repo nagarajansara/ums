@@ -17,22 +17,19 @@ public class Utilities {
 
     public static void setSuccessMessage(Object responseData,
             ReponseCode reponseCode, Response response) {
-
         response.setCode(reponseCode.getCode() + "");
         response.setMessage(reponseCode.getMessage());
         response.setData(responseData);
-
     }
 
-    public static void setErrorMessage(Object ex, Response response) {
+    public static void setErrorMessage(Object ex, Response response, ReponseCode reponseCode) {
         if (ex instanceof UmsException) {
             UmsException umsException = (UmsException) ex;
             response.setCode(umsException.getErrorCode());
             response.setMessage(umsException.getErrorMessage());
         } else {
-            Exception exception = (Exception) ex;
-            response.setMessage(exception.getMessage());
-            response.setCode("-1");
+            response.setMessage(reponseCode.getMessage());
+            response.setCode(reponseCode.getCode() + "");
         }
 
     }

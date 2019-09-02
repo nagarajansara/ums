@@ -11,12 +11,14 @@ package com.sara.engine.exception;
  */
 public enum ErrorCode {
 
-    INVALID_INPUT("UMS101", "Invalid input");
+    INVALID_INPUT("UMS101", "Invalid input"),
+    USERNAME_EXISTS("UMS102", "Provided email id already exists"),
+    NO_RECORD_FOUND("UMS103", "No records found");
 
     private String message;
     private String errorCode;
 
-    private ErrorCode(String message, String errorCode) {
+    private ErrorCode(String errorCode, String message) {
         this.message = message;
         this.errorCode = errorCode;
     }

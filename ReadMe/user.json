@@ -1,5 +1,4 @@
-{  
-   "users":[  
+ [  
       {  
          "email":"rnagarajan.ramalingam@gmail.com",
          "first_name":"Nagarajan",
@@ -9,5 +8,4 @@
          "status":"active",
          "gender":"male"
       }
-   ]
-}
+ ]
