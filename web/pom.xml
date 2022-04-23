@@ -21,7 +21,7 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mysql.connector.version>5.1.31</mysql.connector.version>
-        <spring.version>4.0.4.RELEASE</spring.version>
+        <spring.version>5.3.19</spring.version>
     </properties>
     
     <dependencies>
